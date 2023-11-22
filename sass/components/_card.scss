@@ -45,7 +45,7 @@
         rgba(i.$color-purple-dark, 0.3) 50%,
         transparent 80%
       ),
-      url("../../img/panoramic-2.jpg");
+      url("../img/panoramic-2.jpg");
     background-position-x: 20%;
     background-position-y: 100%;
     @include i.media(tab-land) {
@@ -58,7 +58,7 @@
           rgba(i.$color-purple-dark, 0.3) 50%,
           transparent 80%
         ),
-        url("../../img/small-2.jpg");
+        url("../img/small-2.jpg");
       background-position-x: center;
     }
     @include i.media(phone) {
@@ -68,7 +68,7 @@
           rgba(i.$color-purple-dark, 0.3) 50%,
           transparent 80%
         ),
-        url("../../img/small-2.jpg");
+        url("../img/small-2.jpg");
     }
   }
   &--3 {
@@ -78,7 +78,7 @@
         rgba(i.$color-purple-dark, 0.3) 50%,
         transparent 80%
       ),
-      url("../../img/panoramic-3.jpg");
+      url("../img/panoramic-3.jpg");
     background-position-x: 10%;
 
     @include i.media(tab-land) {
@@ -91,7 +91,7 @@
           rgba(i.$color-purple-dark, 0.3) 50%,
           transparent 80%
         ),
-        url("../../img/small-3.jpg");
+        url("../img/small-3.jpg");
       background-position-x: 35%;
     }
   }
@@ -102,7 +102,7 @@
         rgba(i.$color-purple-dark, 0.3) 50%,
         transparent 80%
       ),
-      url("../../img/panoramic-4.jpg");
+      url("../img/panoramic-4.jpg");
     background-position-x: 70%;
     @include i.media(tab-land) {
       background-position-x: 80%;
@@ -114,7 +114,7 @@
           rgba(i.$color-purple-dark, 0.3) 50%,
           transparent 80%
         ),
-        url("../../img/small-4.jpeg");
+        url("../img/small-4.jpeg");
       background-position-x: 60%;
     }
   }
