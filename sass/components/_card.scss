@@ -31,7 +31,8 @@
         rgba(i.$color-purple-dark, 0.3) 50%,
         transparent 80%
       ),
-      url("../../img/panoramic-1.jpg");
+      url("../img/panoramic-1.jpg");
+    /* url("../../img/panoramic-1.jpg"); */
 
     @include i.media(photo) {
       background-position-x: center;
