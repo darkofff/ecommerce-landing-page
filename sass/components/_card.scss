@@ -102,7 +102,7 @@
         rgba(i.$color-purple-dark, 0.3) 50%,
         transparent 80%
       ),
-      url("../img/panoramic-4.jpg");
+      url("./../img/panoramic-4.jpg");
     background-position-x: 70%;
     @include i.media(tab-land) {
       background-position-x: 80%;
