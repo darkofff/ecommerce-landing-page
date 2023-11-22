@@ -1,0 +1,37 @@
+@use "../index" as i;
+
+.brands {
+  overflow: hidden;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 1rem 0;
+  display: flex;
+  position: relative;
+  align-items: center;
+  &:hover &__container {
+    animation-play-state: paused;
+  }
+  &__container {
+    display: flex;
+    min-width: 130rem;
+    justify-content: space-between;
+
+    animation-name: slide;
+    animation-duration: 35s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    padding: 0 2rem;
+  }
+
+  &__item {
+    height: 1.5rem;
+  }
+
+  &__filter {
+    position: absolute;
+    background-color: rgba(i.$color-white, 0.2);
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+  }
+}

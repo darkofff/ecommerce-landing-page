@@ -1,0 +1,56 @@
+@use "../index.scss" as i;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+  padding: 1rem 3rem;
+  box-shadow: 0 0.4rem 1rem rgba(i.$color-black-3, 0.1);
+
+  @include i.media(tab-land) {
+    padding: 1rem 2rem;
+  }
+  @include i.media(tab-port) {
+    padding: 1rem 1rem;
+  }
+  @include i.media(big-desktop) {
+    padding: 1rem 0;
+  }
+  &:hover {
+    box-shadow: 0 0.4rem 1rem rgba(i.$color-black-2, 0.15);
+  }
+
+  &__right {
+    text-align: right;
+    color: i.$color-black;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    &--mod {
+      column-gap: 8rem;
+      @include i.media(phone) {
+        column-gap: 5rem;
+      }
+      @media (max-width: 360px) {
+        column-gap: 2rem;
+      }
+    }
+  }
+  &__close {
+    font-weight: bolder;
+    font-size: 2rem;
+    cursor: pointer;
+
+    &:hover {
+      color: i.$color-black-3;
+      transform: translateY(-1px);
+    }
+    &:active {
+      color: i.$color-black-2;
+    }
+  }
+}

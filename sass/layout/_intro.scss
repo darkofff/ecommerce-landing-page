@@ -1,0 +1,49 @@
+@use "../index" as i;
+
+.intro {
+  background-image: url("../../img/section-about.jpg");
+  padding: 3rem;
+  height: 70vh;
+  min-height: 50rem;
+  max-height: 70rem;
+  background-size: cover;
+  background-position-x: 0%;
+  background-position-y: 30%;
+  position: relative;
+  display: flex;
+  align-items: end;
+
+  @include i.media(tab-land) {
+    background-position-x: left;
+  }
+  @include i.media(tab-port) {
+    background-position-x: 20%;
+  }
+  @include i.media(phone) {
+    height: 90vh;
+
+    background-position-x: center;
+    background-position-x: bottom;
+
+    padding: 1.5rem;
+  }
+
+  &__box {
+    background-color: rgba(i.$color-white, $alpha: 0.8);
+    max-width: 40%;
+    padding: 3rem;
+    height: fit-content;
+
+    @include i.media(tab-land) {
+      max-width: 45%;
+    }
+    @include i.media(tab-port) {
+      max-width: 55%;
+      padding: 1.5rem;
+    }
+    @include i.media(phone) {
+      max-width: 100%;
+      padding: 1.5rem;
+    }
+  }
+}

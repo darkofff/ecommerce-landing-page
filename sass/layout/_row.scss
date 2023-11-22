@@ -1,0 +1,20 @@
+.row {
+  display: block;
+  margin: 0 auto;
+  max-width: 120rem;
+  //border: 5px dotted orangered;
+
+  &--flex {
+    display: flex;
+  }
+
+  &--space {
+    justify-content: space-between;
+  }
+}
+
+.col {
+  &--50 {
+    width: 50%;
+  }
+}

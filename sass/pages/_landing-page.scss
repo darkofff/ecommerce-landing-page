@@ -1,0 +1,24 @@
+@use "../index.scss" as i;
+
+.section-intro {
+  margin-top: 10.5rem;
+
+  @include i.media(tab-land) {
+    margin-top: 10rem;
+  }
+  @include i.media(tab-port) {
+    margin-top: 9rem;
+  }
+  @include i.media(phone) {
+    margin-top: 7.5rem;
+  }
+}
+
+.section-media-scroller {
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+}
+
+/* .section-cards {
+  //s
+} */

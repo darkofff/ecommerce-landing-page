@@ -1,0 +1,77 @@
+@use "../index" as i;
+
+body {
+  overflow-y: scroll;
+}
+
+.form-container {
+  /*  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  width: max(40%, 50rem);
+  margin: 12rem auto 0;
+
+  @include i.media(tab-port) {
+    margin-top: 11rem;
+  }
+  @include i.media(phone) {
+    margin-top: 10rem;
+    width: 95%;
+  }
+}
+
+.form {
+  h1 {
+    text-align: center;
+  }
+  &__box {
+    position: relative;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__input {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: i.$font-par;
+    color: i.$color-black-2;
+    padding: 1rem 1rem;
+    border-radius: 3px;
+    border: 2px solid i.$color-dark-gray-1;
+    width: 100%;
+    outline: 1px solid transparent;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  &__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: i.$color-black;
+    font-family: i.$font-par;
+    padding-left: 1rem;
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    color: transparent;
+    transition: all 0.2s;
+  }
+
+  &__input:focus {
+    outline: 1px solid i.$color-input-blue;
+    &::placeholder {
+      color: transparent;
+    }
+  }
+
+  &__input:focus + &__label {
+    transform: translateY(-3rem);
+    color: i.$color-black;
+  }
+  &__input:not(:placeholder-shown) + &__label {
+    transform: translateY(-3rem);
+    color: i.$color-black;
+  }
+}

@@ -1,0 +1,67 @@
+@use "../abstracts/variables" as var;
+
+.heading-primary {
+  font-size: 4rem;
+  line-height: 4.5rem;
+  font-weight: 700;
+  &::selection {
+    background-color: var.$color-purple-light;
+    color: var.$color-white;
+  }
+}
+.heading-secondary {
+  font-size: 3rem;
+  line-height: 3.4rem;
+  &::selection {
+    background-color: var.$color-purple-light;
+    color: var.$color-white;
+  }
+}
+.heading-tertiary {
+  font-size: 2.1rem;
+  letter-spacing: 0.2rem;
+  color: var.$color-dark-gray-1;
+  font-weight: 500;
+  &::selection {
+    background-color: var.$color-purple-light;
+    color: var.$color-white;
+  }
+  &--up {
+    text-transform: uppercase;
+    &::selection {
+      background-color: var.$color-purple-light;
+      color: var.$color-white;
+    }
+  }
+  &--light {
+    font-weight: 300;
+    &::selection {
+      background-color: var.$color-purple-light;
+      color: var.$color-white;
+    }
+  }
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var.$color-black;
+  &--small {
+    font-size: 1.5rem;
+    font-weight: 400;
+    &::selection {
+      background-color: var.$color-purple-light;
+      color: var.$color-white;
+    }
+  }
+  &::selection {
+    background-color: var.$color-purple-light;
+    color: var.$color-white;
+  }
+}
+/* 
+&::selection {
+  background-color: i.$color-purple-light;
+  color: i.$color-white;
+}
+*/

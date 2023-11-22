@@ -1,0 +1,85 @@
+@use "../index" as i;
+
+.footer {
+  font-size: 1.4rem;
+  background-color: i.$color-light-gray-3;
+  padding: 8rem 3rem;
+
+  @include i.media(tab-port) {
+    padding: 6rem 1.5rem;
+  }
+  &__row {
+    display: flex;
+    column-gap: 5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 7rem;
+    @include i.media(tab-port) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 3rem;
+      width: fit-content;
+      margin-top: 4rem;
+    }
+  }
+
+  &__side {
+    border-top: 1px solid i.$color-black;
+    padding-top: 1rem;
+    width: max(46%, 40rem);
+
+    @include i.media(tab-port) {
+      width: 75%;
+    }
+    @include i.media(phone) {
+      width: 95%;
+    }
+  }
+
+  &__left {
+  }
+  &__right {
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media (max-width: 420px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      //background-color: red;
+    }
+  }
+
+  &__item {
+    @media (max-width: 420px) {
+      text-align: center;
+    }
+  }
+  &__link {
+    font-family: i.$font-par;
+    text-decoration: none;
+    color: i.$color-black;
+    text-transform: uppercase;
+    transition: all 0.2s;
+    cursor: pointer;
+    &::selection {
+      background-color: i.$color-purple-light;
+      color: i.$color-white;
+    }
+    &:hover {
+      background-color: i.$color-purple-light;
+      color: i.$color-white;
+      display: inline-block;
+      transform: scale(1.1) rotate(10deg);
+      box-shadow: 1px 3px 6px i.$color-black-2;
+    }
+  }
+}
+
+.footer__logo {
+  text-align: center;
+  margin-bottom: 6rem;
+}

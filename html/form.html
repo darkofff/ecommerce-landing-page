@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="module" src="../javascript/form.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="row row--flex row--space">
+        <div class="logo">
+          <a class="logo__link" href="#">
+            <h1 class="logo__text">Fashion Paradise</h1>
+          </a>
+        </div>
+        <div class="header__right header__right--mod">
+          <button data-modal-btn-state class="btn-text">Zarejestruj się</button>
+          <div id="exit-btn" class="header__close">&#x2715;</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="form-container">
+      <form action="#" class="form">
+        <h1 id="form-header" class="heading-primary u-marg-bot-small">
+          Utwórz konto
+        </h1>
+        <div data-validate="email" class="form__box">
+          <input
+            type="email"
+            class="form__input"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <!-- value="email@domain.com" -->
+          <label for="email" class="form__label">Email</label>
+        </div>
+        <div class="form__box">
+          <input
+            type="text"
+            class="form__input"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <!-- value="secretPassword123" -->
+          <label data-validate="password" for="password" class="form__label"
+            >Password</label
+          >
+        </div>
+        <p class="paragraph--small" id="form-par">
+          *Należy użyć co najmniej 8 znaków z kombinacją liter, cyfr i bez
+          spacji.
+        </p>
+        <button type="submit" class="modal__btn u-marg-top-mid">Dalej</button>
+        <button
+          id="form-btn-text"
+          type="button"
+          class="btn-text u-marg-top-small"
+        >
+          Zapomniałeś/aś hasła?
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

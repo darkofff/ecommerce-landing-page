@@ -1,0 +1,142 @@
+@use "../index" as i;
+
+.card {
+  padding: 2rem 3rem;
+  border-radius: 3px;
+
+  background-position-x: left;
+  background-position-y: 10%;
+  background-repeat: no-repeat;
+
+  min-height: 45rem;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  @include i.media(phone) {
+    min-height: 60rem;
+    background-size: cover;
+    padding: 1.5rem;
+  }
+
+  @include i.media(big-desktop) {
+    background-size: cover;
+  }
+
+  &--1 {
+    background-image: linear-gradient(
+        110deg,
+        rgba(i.$color-purple-light, 0.8) 0%,
+        rgba(i.$color-purple-dark, 0.3) 50%,
+        transparent 80%
+      ),
+      url("../../img/panoramic-1.jpg");
+
+    @include i.media(photo) {
+      background-position-x: center;
+    }
+  }
+  &--2 {
+    background-image: linear-gradient(
+        110deg,
+        rgba(i.$color-purple-light, 0.8) 0%,
+        rgba(i.$color-purple-dark, 0.3) 50%,
+        transparent 80%
+      ),
+      url("../../img/panoramic-2.jpg");
+    background-position-x: 20%;
+    background-position-y: 100%;
+    @include i.media(tab-land) {
+      background-position-x: 50%;
+    }
+    @include i.media(phone) {
+      background-image: linear-gradient(
+          110deg,
+          rgba(i.$color-purple-light, 0.8) 0%,
+          rgba(i.$color-purple-dark, 0.3) 50%,
+          transparent 80%
+        ),
+        url("../../img/small-2.jpg");
+      background-position-x: center;
+    }
+    @include i.media(phone) {
+      background-image: linear-gradient(
+          110deg,
+          rgba(i.$color-purple-light, 0.8) 0%,
+          rgba(i.$color-purple-dark, 0.3) 50%,
+          transparent 80%
+        ),
+        url("../../img/small-2.jpg");
+    }
+  }
+  &--3 {
+    background-image: linear-gradient(
+        110deg,
+        rgba(i.$color-purple-light, 0.8) 0%,
+        rgba(i.$color-purple-dark, 0.3) 50%,
+        transparent 80%
+      ),
+      url("../../img/panoramic-3.jpg");
+    background-position-x: 10%;
+
+    @include i.media(tab-land) {
+      background-position-x: 50%;
+    }
+    @include i.media(phone) {
+      background-image: linear-gradient(
+          110deg,
+          rgba(i.$color-purple-light, 0.8) 0%,
+          rgba(i.$color-purple-dark, 0.3) 50%,
+          transparent 80%
+        ),
+        url("../../img/small-3.jpg");
+      background-position-x: 35%;
+    }
+  }
+  &--4 {
+    background-image: linear-gradient(
+        110deg,
+        rgba(i.$color-purple-light, 0.8) 0%,
+        rgba(i.$color-purple-dark, 0.3) 50%,
+        transparent 80%
+      ),
+      url("../../img/panoramic-4.jpg");
+    background-position-x: 70%;
+    @include i.media(tab-land) {
+      background-position-x: 80%;
+    }
+    @include i.media(phone) {
+      background-image: linear-gradient(
+          110deg,
+          rgba(i.$color-purple-light, 0.8) 0%,
+          rgba(i.$color-purple-dark, 0.3) 50%,
+          transparent 80%
+        ),
+        url("../../img/small-4.jpeg");
+      background-position-x: 60%;
+    }
+  }
+
+  &__content {
+    height: 100%;
+    max-width: 50%;
+    @include i.media(tab-port) {
+      max-width: 70%;
+    }
+    @include i.media(phone) {
+      max-width: 100%;
+    }
+  }
+  &__data {
+    background-color: rgba(i.$color-white, 0.9);
+    padding: 3rem 4rem;
+    border-radius: 3px;
+    @include i.media(phone) {
+      padding: 1.5rem;
+    }
+    p {
+      font-weight: 500;
+    }
+  }
+}

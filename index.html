@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="/javascript/index.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="row row--flex row--space">
+        <div class="">
+          <div class="logo">
+            <a class="logo__link" href="#">
+              <h1 class="logo__text">Fashion Paradise</h1>
+            </a>
+          </div>
+        </div>
+
+        <div class="header__right">
+          <button data-modal-open class="btn-text">Zaloguj się</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-intro">
+        <div class="row" id="row">
+          <div class="intro">
+            <div class="intro__box">
+              <h3 class="heading-tertiary heading-tertiary">
+                WITAMY W LOUNGE BY ZALANDO
+              </h3>
+              <h1 class="heading-primary">Wszystkie Twoje ulubione marki</h1>
+              <p class="paragraph u-marg-top-small">
+                Kochasz modę i promocje? W Lounge by Zalando możesz odkryć
+                codzienne oferty na modę, artykuły premium i do domu nawet do
+                -75%*.
+              </p>
+              <button data-modal-open class="btn u-marg-top-small">
+                Dołącz teraz
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="brands">
+          <div class="brands__filter"></div>
+          <div class="brands__container" id="banner">
+            <img
+              src="/img/logos/hugo-boss.svg"
+              alt="hugo boss logo"
+              class="brands__item"
+            />
+            <img
+              src="/img/logos/larsen-3.svg"
+              alt="larsen logo"
+              class="brands__item"
+            />
+            <img
+              src="/img/logos/champion-logo.svg"
+              alt="champion logo"
+              class="brands__item"
+            />
+            <img
+              src="/img/logos/zara-logo-1.svg"
+              alt="zara logo"
+              class="brands__item"
+            />
+            <img
+              src="/img/logos/burberry-logo-1.svg"
+              alt="burberry logo"
+              class="brands__item"
+            />
+            <img
+              src="/img/logos/marc-opolo.svg"
+              alt="marc-opolo logo"
+              class="brands__item"
+            />
+            <img
+              src="/img/logos/zalando-2.svg"
+              alt="zalando logo"
+              class="brands__item"
+            />
+            <img
+              src="/img/logos/adidas-7.svg"
+              alt="adidas logo"
+              class="brands__item"
+            />
+            <img
+              src="/img/logos/chanel-logo.svg"
+              alt="chanel logo"
+              class="brands__item"
+            />
+          </div>
+          <div class="brands__container" id="banner">
+            <img
+              src="/img/logos/hugo-boss.svg"
+              alt="hugo boss logo"
+              class="brands__item"
+            />
+            <img
+              src="/img/logos/larsen-3.svg"
+              alt="larsen logo"
+              class="brands__item"
+            />
+            <img
+              src="/img/logos/champion-logo.svg"
+              alt="champion logo"
+              class="brands__item"
+            />
+            <img
+              src="/img/logos/zara-logo-1.svg"
+              alt="zara logo"
+              class="brands__item"
+            />
+            <img
+              src="/img/logos/burberry-logo-1.svg"
+              alt="burberry logo"
+              class="brands__item"
+            />
+            <img
+              src="/img/logos/marc-opolo.svg"
+              alt="marc-opolo logo"
+              class="brands__item"
+            />
+            <img
+              src="/img/logos/zalando-2.svg"
+              alt="zalando logo"
+              class="brands__item"
+            />
+            <img
+              src="/img/logos/adidas-7.svg"
+              alt="adidas logo"
+              class="brands__item"
+            />
+            <img
+              src="/img/logos/chanel-logo.svg"
+              alt="chanel logo"
+              class="brands__item"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="cards-media" class="section-media-scroller">
+        <div class="h3h1">
+          <div class="h3h1__col">
+            <h3 class="heading-tertiary">Dołącz i odkrywaj</h3>
+            <h1 class="heading-primary">Codzienne oferty do -75%*</h1>
+          </div>
+          <div class="h3h1__col--right">
+            <button data-modal-open class="btn-text">Zobacz więcej</button>
+          </div>
+        </div>
+
+        <div class="row media-container">
+          <div class="card-switch card-switch--prev" id="card-prev">
+            &#10092;
+          </div>
+          <div class="card-switch card-switch--next" id="card-next">
+            &#10093;
+          </div>
+          <div class="media-scroller">
+            <div class="ms-card">
+              <div class="ms-card__img-box"></div>
+              <div class="ms-card__description">
+                <p class="ms-card__title"></p>
+                <div class="ms-card__price"></div>
+              </div>
+            </div>
+            <div class="ms-card">
+              <div class="ms-card__img-box"></div>
+              <div class="ms-card__description">
+                <p class="ms-card__title"></p>
+                <div class="ms-card__price"></div>
+              </div>
+            </div>
+            <div class="ms-card">
+              <div class="ms-card__img-box"></div>
+              <div class="ms-card__description">
+                <p class="ms-card__title"></p>
+                <div class="ms-card__price"></div>
+              </div>
+            </div>
+            <div class="ms-card">
+              <div class="ms-card__img-box"></div>
+              <div class="ms-card__description">
+                <p class="ms-card__title"></p>
+                <div class="ms-card__price"></div>
+              </div>
+            </div>
+            <div class="ms-card">
+              <div class="ms-card__img-box"></div>
+              <div class="ms-card__description">
+                <p class="ms-card__title"></p>
+                <div class="ms-card__price"></div>
+              </div>
+            </div>
+            <div class="ms-card">
+              <div class="ms-card__img-box"></div>
+              <div class="ms-card__description">
+                <p class="ms-card__title"></p>
+                <div class="ms-card__price"></div>
+              </div>
+            </div>
+            <div class="ms-card">
+              <div class="ms-card__img-box"></div>
+              <div class="ms-card__description">
+                <p class="ms-card__title"></p>
+                <div class="ms-card__price"></div>
+              </div>
+            </div>
+            <div class="ms-card">
+              <div class="ms-card__img-box"></div>
+              <div class="ms-card__description">
+                <p class="ms-card__title"></p>
+                <div class="ms-card__price"></div>
+              </div>
+            </div>
+            <div class="ms-card">
+              <div class="ms-card__img-box"></div>
+              <div class="ms-card__description">
+                <p class="ms-card__title"></p>
+                <div class="ms-card__price"></div>
+              </div>
+            </div>
+            <div class="ms-card">
+              <div class="ms-card__img-box"></div>
+              <div class="ms-card__description">
+                <p class="ms-card__title"></p>
+                <div class="ms-card__price"></div>
+              </div>
+            </div>
+            <div class="ms-card">
+              <div class="ms-card__img-box"></div>
+              <div class="ms-card__description">
+                <p class="ms-card__title"></p>
+                <div class="ms-card__price"></div>
+              </div>
+            </div>
+            <div class="ms-card">
+              <div class="ms-card__img-box"></div>
+              <div class="ms-card__description">
+                <p class="ms-card__title"></p>
+                <div class="ms-card__price"></div>
+              </div>
+            </div>
+          </div>
+          <div id="progress-bar"></div>
+        </div>
+      </section>
+
+      <section class="section-presentation">
+        <div class="h3h1">
+          <div class="h3h1__col">
+            <h3 class="heading-tertiary">Co możemy Ci zaoferować</h3>
+            <h1 class="heading-primary">Korzyści Lounge by Zalando</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="ads-container">
+            <div data-modal-open class="ad row--flex">
+              <div class="ad__left">
+                <img
+                  src="img/linea_ecommerce_1.0/_SVG/ecommerce_gift.svg"
+                  alt=""
+                />
+              </div>
+              <div class="ad__right">
+                <h2 class="heading-secondary">Obniżki do -75%*</h2>
+                <div class="paragraph">
+                  Wyglądaj świetnie, czuj się doskonale. Spraw sobie
+                  przyjemność. Ponieważ możesz.
+                </div>
+              </div>
+            </div>
+
+            <div data-modal-open class="ad row--flex">
+              <div class="ad__left">
+                <img
+                  src="img/linea_ecommerce_1.0/_SVG/ecommerce_diamond.svg"
+                  alt=""
+                />
+              </div>
+              <div class="ad__right">
+                <h2 class="heading-secondary">Topowe marki dla Ciebie</h2>
+                <div class="paragraph">
+                  Ponad 2500 marek, które gwarantują Ci wymarzone zakupy
+                </div>
+              </div>
+            </div>
+
+            <div data-modal-open class="ad row--flex">
+              <div class="ad__left">
+                <img
+                  src="img/linea_ecommerce_1.0/_SVG/ecommerce_graph_decrease.svg"
+                  alt=""
+                />
+              </div>
+              <div class="ad__right">
+                <h2 class="heading-secondary">Nowy dzień, nowa wyprzedaż</h2>
+                <div class="paragraph">
+                  Sprawdzaj codziennie. Najnowsze trendy czekają na Ciebie!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- h3h1 heading to reuse 
+      
+      <div class="h3h1">
+        <div class="h3h1__col">
+          <h3 class="heading-tertiary">Dołącz i odkrywaj</h3>
+          <h1 class="heading-primary">Codzienne oferty do -75%*</h1>
+        </div>
+        <div class="h3h1__col--right">
+          <button class="btn-text">Zobacz więcej</button>
+        </div>
+      </div>
+      -->
+
+      <section class="section-cards">
+        <div class="h3h1">
+          <div class="h3h1__col">
+            <h3 class="heading-tertiary">Moda, Premium i Dom</h3>
+            <h1 class="heading-primary">Outlet online</h1>
+          </div>
+          <div class="h3h1__col--right">
+            <button data-modal-open class="btn-text">Zobacz więcej</button>
+          </div>
+        </div>
+
+        <div class="row u-marg-bot-mid">
+          <div class="card card--1">
+            <div class="card__content">
+              <div class="card__data">
+                <h3
+                  class="heading-tertiary heading-tertiary--light heading-tertiary--up"
+                >
+                  Moda
+                </h3>
+                <h2 class="heading-secondary">
+                  Najnowsze trendy, najbardziej pożądane marki
+                </h2>
+                <p class="paragraph--small u-marg-top-small">
+                  W naszym internetowym outlecie odkryjesz najmodniejsze skarby
+                  dla Ciebie i Twojej rodziny. Od codziennych ubrań do tych
+                  wyjątkowych – znajdziesz tu modę na każdą kieszeń, w każdym
+                  rozmiarze i stylu. Czy wspomnieliśmy już, że mamy w ofercie
+                  także marki premium takie jak Pinko i Tommy Hilfiger? Zgarnij
+                  najlepsze oferty na odzież damską, męską i dziecięcą, teraz ze
+                  zniżkami nawet do 75%*.
+                </p>
+                <button data-modal-open class="btn-text u-marg-top-small">
+                  Zobacz więcej
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row u-marg-bot-mid">
+          <div class="card card--2">
+            <div class="card__content">
+              <div class="card__data">
+                <h3
+                  class="heading-tertiary heading-tertiary--light heading-tertiary--up"
+                >
+                  BUTY I AKCESORIA
+                </h3>
+                <h2 class="heading-secondary">Wisienka na torcie</h2>
+                <p class="paragraph--small u-marg-top-small">
+                  Uzupełnij swoje stylizacje obuwiem i akcesoriami w
+                  atrakcyjnych cenach. Znajdź swój unikalny styl dzięki naszej
+                  wyjątkowej selekcji: od idealnej pary trampek Nike i Converse,
+                  po modną torbę na ramię, błyszczącą biżuterię i klasyczne
+                  zegarki.
+                </p>
+                <button data-modal-open class="btn-text u-marg-top-small">
+                  Zobacz więcej
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row u-marg-bot-mid">
+          <div class="card card--3">
+            <div class="card__content">
+              <div class="card__data">
+                <h3
+                  class="heading-tertiary heading-tertiary--light heading-tertiary--up"
+                >
+                  DOM I LIFESTYLE
+                </h3>
+                <h2 class="heading-secondary">Nie ma jak w domu</h2>
+                <p class="paragraph--small u-marg-top-small">
+                  Myślisz, że dbamy tylko o Twoją szafę? Poznaj nasze artykuły
+                  gospodarstwa domowego. Nasze produkty dla domu – najwyższej
+                  jakości w niewiarygodnych cenach – pomogą Ci wykreować
+                  wymarzoną przestrzeń życiową. Od urządzeń kuchennych
+                  KitchenAid po wysokiej klasy pościel i zestawy dekoracyjne – z
+                  pewnością znajdziesz propozycje pasujące do Twoich wnętrz.
+                </p>
+                <button data-modal-open class="btn-text u-marg-top-small">
+                  Zobacz więcej
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row u-marg-bot-mid">
+          <div class="card card--4">
+            <div class="card__content">
+              <div class="card__data">
+                <h3
+                  class="heading-tertiary heading-tertiary--light heading-tertiary--up"
+                >
+                  SPORT
+                </h3>
+                <h2 class="heading-secondary">Do zakupów, gotowi, start!</h2>
+                <p class="paragraph--small u-marg-top-small">
+                  Przenieś swoją formę i styl na wyższy poziom dzięki naszej
+                  najmodniejszej odzieży sportowej. Odkryj codziennie nowe
+                  oferty na odzież sportową, a także obuwie adidas, ASICS i
+                  innych. Niezależnie od tego, czy wolisz ćwiczyć na siłowni, w
+                  plenerze, czy może z przyjaciółmi, dzięki naszym niesamowitym
+                  ofertom na pewno znajdziesz coś dla siebie.
+                </p>
+                <button data-modal-open class="btn-text u-marg-top-small">
+                  Zobacz więcej
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="logo row footer__logo">
+        <a class="logo__link" href="#">
+          <h1 class="logo__text logo__text--footer">Fashion Paradise</h1>
+        </a>
+      </div>
+      <div class="row footer__row">
+        <div class="footer__left footer__side">
+          <ul class="footer__list">
+            <div class="footer__item">
+              <a href="#" class="footer__link">company</a>
+            </div>
+            <div class="footer__item">
+              <a href="#" class="footer__link">contact us</a>
+            </div>
+            <div class="footer__item">
+              <a href="#" class="footer__link">carrers</a>
+            </div>
+            <div class="footer__item">
+              <a href="#" class="footer__link">privacy</a>
+            </div>
+            <div class="footer__item">
+              <a href="#" class="footer__link">terms</a>
+            </div>
+          </ul>
+        </div>
+        <div class="footer__right footer__side">
+          <p class="paragraph--small">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            accusantium harum incidunt tempora. Voluptate veritatis perferendis
+            natus soluta nisi voluptatibus in iusto, ratione dolores qui unde,
+            quasi suscipit tempore explicabo.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal" id="modal">
+      <header class="header">
+        <div class="row row--flex row--space">
+          <div class="logo">
+            <a class="logo__link" href="#">
+              <h1 class="logo__text">Fashion Paradise</h1>
+            </a>
+          </div>
+          <div class="header__right header__right--mod">
+            <button data-modal-btn-state="register" class="btn-text">
+              Zarejestruj się
+            </button>
+            <div data-modal-close class="header__close">&#x2715;</div>
+          </div>
+        </div>
+      </header>
+      <div class="row modal__content">
+        <div class="modal__top" id="modal__top--login">
+          <div class="modal__width">
+            <h1 class="heading-primary">Witamy ponownie!</h1>
+            <p class="modal__par">Zaloguj się i zacznij zakupy</p>
+            <button data-log="login" class="modal__btn u-marg-top-mid">
+              Zaloguj się
+            </button>
+          </div>
+        </div>
+        <div class="modal__top modal-display-none" id="modal__top--register">
+          <div class="modal__width">
+            <h1 class="heading-primary">Dołącz do klubu Lounge by Zalando</h1>
+            <p class="modal__par">Szybko, niewiążąco i bezpłatnie</p>
+            <button data-log="register" class="modal__btn u-marg-top-mid">
+              Utwórz konto
+            </button>
+          </div>
+        </div>
+
+        <div class="modal__bottom">
+          <div class="modal__width">
+            <p class="modal__par u-marg-bot-small">
+              Lub podłącz istniejące konto
+            </p>
+            <button class="modal__btn modal__btn--white u-marg-bot-small">
+              <img
+                class="modal__logo"
+                src="img/svg/google.svg"
+                alt="google logo"
+              />
+              Kontynuuj z Google
+            </button>
+            <button class="modal__btn modal__btn--white u-marg-bot-small">
+              <img
+                class="modal__logo"
+                src="img/svg/apple.svg"
+                alt="apple logo"
+              />
+              Kontynuuj z Apple
+            </button>
+            <button class="modal__btn modal__btn--white u-marg-bot-small">
+              <img
+                class="modal__logo"
+                src="img/svg/facebook.svg"
+                alt="facebook logo"
+              />
+              Kontynuuj z Facebook
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

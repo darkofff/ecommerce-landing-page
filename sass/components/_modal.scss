@@ -1,0 +1,102 @@
+@use "../index" as i;
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: i.$color-white;
+  z-index: 10;
+  padding: 0 3rem;
+  padding-top: 7.4rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.25s;
+  overflow-y: scroll;
+  //scroll-snap-align: contain;
+
+  @include i.media(tab-port) {
+    padding: 0 2rem;
+    padding-top: 8rem;
+  }
+  @include i.media(phone) {
+    padding: 0 1rem;
+    padding-top: 6.5rem;
+  }
+
+  &__content {
+    z-index: 1000;
+  }
+
+  &__width {
+    width: 45rem;
+    margin: 0 auto;
+    display: block;
+    @include i.media(phone) {
+      width: 95%;
+    }
+  }
+
+  &__top {
+    background-color: i.$color-light-gray-3;
+    padding: 3.5rem 0;
+    margin-bottom: 3rem;
+  }
+  &__bottom {
+    text-align: center;
+  }
+
+  &__par {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: i.$color-black-3;
+  }
+
+  &__btn {
+    font-family: i.$font-par;
+
+    background-color: i.$color-black-2;
+    color: i.$color-white;
+    font-weight: 500;
+    padding: 1rem 4rem;
+    font-size: 1.8rem;
+    border-radius: 100px;
+    width: 100%;
+    border: 2px solid i.$color-black-2;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s;
+
+    &:hover {
+      background-color: i.$color-dark-gray-1;
+      border-color: i.$color-dark-gray-1;
+    }
+
+    &--white {
+      border-color: i.$color-black-2;
+      background-color: i.$color-white;
+      color: i.$color-black-2;
+
+      &:hover {
+        border-color: i.$color-black-2;
+        background-color: i.$color-black-2;
+        color: i.$color-white;
+      }
+    }
+  }
+  &__logo {
+    height: 2rem;
+    margin-right: 2rem;
+  }
+}
+.modal-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-display-none {
+  display: none;
+}

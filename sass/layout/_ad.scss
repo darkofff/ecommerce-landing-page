@@ -1,0 +1,27 @@
+@use "../index" as i;
+
+.ads-container {
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  @include i.media(tab-land) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include i.media(tab-port) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.ad {
+  display: flex;
+  column-gap: 2rem;
+  cursor: pointer;
+  padding: 1rem;
+  transition: all 0.5s;
+  border-radius: 3px;
+  &:hover {
+    background-color: rgba(i.$color-purple-light, 0.1);
+  }
+}

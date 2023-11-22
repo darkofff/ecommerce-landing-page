@@ -1,0 +1,30 @@
+@use "../index" as i;
+
+.btn-text {
+  color: i.$color-black;
+  border: 0;
+  background-color: transparent;
+  font-family: i.$font-par;
+  font-weight: 500;
+  border-bottom: 3px solid i.$color-black;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: black;
+  cursor: pointer;
+
+  @include i.selection;
+
+  @include i.media(phone) {
+    font-size: 1.4rem;
+  }
+
+  &:hover {
+    color: i.$color-black-3;
+    border-color: i.$color-black-3;
+    transform: translateY(-1px);
+  }
+  &:active {
+    color: i.$color-black-2;
+    border-color: i.$color-black-2;
+  }
+}

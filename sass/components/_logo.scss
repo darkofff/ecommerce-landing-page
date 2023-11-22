@@ -1,0 +1,33 @@
+@use "../index" as i;
+
+.logo {
+  background-image: linear-gradient(
+    to bottom right,
+    i.$color-input-blue,
+    i.$color-purple-light
+  );
+  width: fit-content;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: "Permanent Marker", cursive;
+}
+
+.logo__link {
+  color: transparent;
+}
+
+.logo__text {
+  font-size: 4rem;
+  &--footer {
+    font-size: 6rem;
+    @include i.media(phone) {
+      font-size: 4rem;
+    }
+  }
+
+  @include i.media(phone) {
+    font-size: 3rem;
+  }
+}

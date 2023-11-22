@@ -1,0 +1,37 @@
+@use "../index.scss" as i;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include i.media(tab-land) {
+    font-size: 56.25%;
+  }
+  @include i.media(tab-port) {
+    font-size: 50%;
+  }
+  @include i.media(big-desktop) {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-family: i.$font-par;
+  font-weight: 400;
+  color: i.$color-black;
+  padding: 0 3rem;
+  @include i.media(tab-land) {
+    padding: 0 2rem;
+  }
+  @include i.media(tab-port) {
+    padding: 0 1rem;
+  }
+  @include i.media(big-desktop) {
+    padding: 0;
+  }
+}
