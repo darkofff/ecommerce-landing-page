@@ -39,6 +39,11 @@ function App() {
   goToForm();
 
   /* MODAL END*/
+
+  window.addEventListener("scroll", function () {
+    // Hide the URL bar by scrolling down the page
+    window.scrollTo(0, 1);
+  });
 }
 
 async function fetchDataForMS() {

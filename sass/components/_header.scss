@@ -15,6 +15,7 @@
   }
   @include i.media(tab-port) {
     padding: 1rem 1rem;
+    position: absolute;
   }
   @include i.media(big-desktop) {
     padding: 1rem 0;

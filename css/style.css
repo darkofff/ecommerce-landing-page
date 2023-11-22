@@ -182,6 +182,7 @@ body {
 @media (max-width: 56.25em) {
   .header {
     padding: 1rem 1rem;
+    position: absolute;
   }
 }
 @media (min-width: 112.5em) {
@@ -300,7 +301,7 @@ body {
 }
 @media (max-width: 56.25em) {
   .media-scroller {
-    grid-auto-columns: 38%;
+    grid-auto-columns: 34%;
   }
 }
 @media (max-width: 37.5em) {
@@ -490,7 +491,7 @@ $color-input-blue: #4f4fe6; */
   }
 }
 .card--4 {
-  background-image: linear-gradient(110deg, rgba(151, 82, 145, 0.8) 0%, rgba(156, 58, 110, 0.3) 50%, transparent 80%), url("../img/panoramic-4.jpg");
+  background-image: linear-gradient(110deg, rgba(151, 82, 145, 0.8) 0%, rgba(156, 58, 110, 0.3) 50%, transparent 80%), url("./../img/panoramic-4.jpg");
   background-position-x: 70%;
 }
 @media (max-width: 75em) {
